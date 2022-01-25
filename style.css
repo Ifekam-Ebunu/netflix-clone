@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* HEADER SECTION STARTS */
+.showcase {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(./images/background.jpg) no-repeat center center/cover;
+}
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+/* NAVBAR */
+.showcase-top {
+  position: relative;
+  z-index: 2;
+  padding: 26px 0px 0px 55px;
+}
+#logo {
+  height: 35px;
+}
+.submit {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 5px 16px;
+  border-radius: 3px;
+  float: right;
+  position: relative;
+  right: 55px;
+}
+.showcase-top select {
+  background: transparent;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 10px;
+  float: right;
+  position: relative;
+  right: 85px;
+}
+option {
+  color: black;
+}
+
+/* GET STARTED */
+.get-started-container {
+  z-index: 2;
+  position: relative;
+  top: 160px;
+  width: 100%;
+  text-align: center;
+}
+h1,
+p {
+  color: white;
+}
+h1 {
+  font-size: 3.9rem;
+  padding-bottom: 10px;
+}
+.para-1 {
+  font-size: 1.7rem;
+  padding-bottom: 12px;
+}
+.para-2 {
+  font-size: 1.2rem;
+  padding-bottom: 12px;
+}
+input {
+  width: 35%;
+  padding: 22px;
+  border: none;
+  margin-top: 0.5%;
+  outline: none;
+}
+button {
+  padding: 22px;
+  border: none;
+  background: #e50914;
+  color: white;
+  margin-left: -0.3%;
+  font-weight: bold;
+}
+
+/* MAIN SECTION STARTS */
+/* ENJOY ON YOUR TV */
+.section-container {
+  border-top: 8px solid #222;
+  background-color: black;
+  display: flex;
+  padding: 0px 80px;
+  padding-bottom: 90px;
+}
+.section-container .left-column {
+  padding-top: 13%;
+  padding-right: 2%;
+}
+.section-container .left-column h1 {
+  font-size: 2rem;
+}
+h3 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-top: 5%;
+}
+.section-container .right-column {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  height: 500px;
+}
+.section-container .right-column img {
+  position: absolute;
+  width: 100%;
+}
+.section-container .right-column .video-1 {
+  margin-left: 13%;
+  margin-top: 16%;
+  width: 73%;
+}
+
+/* DOWNLOAD YOUR SHOW TO WATTCH OFFLINE */
+.section-2-container {
+  border-top: 8px solid #222;
+  background-color: black;
+  display: flex;
+  padding: 0px 80px;
+  padding-bottom: 90px;
+}
+.section-2-container .left-column img {
+  width: 100%;
+}
+.section-2-container .box {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background-color: black;
+  border-radius: 10px;
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: -22%;
+}
+.section-2-container .left-column .box .boxshot {
+  width: 15%;
+}
+.box p {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.box p a {
+  text-decoration: none;
+}
+.section-2-container .left-column .box .download-gif {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  right: 0;
+}
+.section-2-container .right-column {
+  padding-top: 13%;
+  padding-right: 2%;
+  width: 50%;
+}
+.section-2-container .right-column h1 {
+  font-size: 2rem;
+}
+.section-2-container .right-column h3 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-top: 5%;
+}
+
+/* WATCH EVERYWHERE SECTION */
+.video-2 {
+  margin-left: 19%;
+  margin-top: 8%;
+  width: 61%;
+}
+/* create profile for kids */
+.section-2-container .left-column img {
+  width: 100%;
+}
+/* QUESTION  SECTION */
+.question-container {
+  background: black;
+  border-top: 8px solid #222;
+  padding-top: 60px;
+}
+.question-container h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 3%;
+}
+.question-container button {
+  border: none;
+  background-color: #303030;
+  color: white;
+  width: 60%;
+  padding: 16px;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+.question-container button img {
+  width: 3%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  right: 20px;
+}
+.question-container .answer1,
+.answer2,
+.answer3,
+.answer4,
+.answer5,
+.answer6 {
+  background-color: #303030;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 20px;
+  display: none;
+}
+
+/* EMAIL ADDRESS STARTS */
+.email-address-container {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: black;
+}
+/* FOOTER SECTION STARTS */
+footer {
+  background-color: black;
+  border-top: 8px solid #222;
+  padding-top: 5%;
+}
+footer h5 {
+  color: white;
+  text-align: center;
+  padding-bottom: 1%;
+}
+footer .content {
+  max-width: 1350px;
+  margin: 0 90px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .content .box {
+  width: 20%;
+  transition: all 0.4s ease;
+}
+footer .content p {
+  text-align: justify;
+}
+footer .content .middle {
+  padding-left: 80px;
+}
+footer .content .middle a {
+  line-height: 32px;
+  color: white;
+  text-decoration: none;
+}
+footer .content .middle a:hover {
+  text-decoration: underline;
+}
+footer .content .middle select {
+  padding: 8px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid gray;
+}
+footer .content .middle select option {
+  background-color: black;
+}
+
+/* RESPONSIVE CSS code */
+@media (max-width: 1100px) {
+  footer .content .middle {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 943px) {
+  /* GET STARTED */
+  .get-started-container {
+    position: relative;
+    top: 90px;
+  }
+  h1 {
+    font-size: 3.4rem;
+  }
+  .para-1 {
+    font-size: 1.5rem;
+  }
+  .para-2 {
+    font-size: 1rem;
+  }
+  input {
+    padding: 17px;
+    width: 55%;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    padding: 12px;
+  }
+  /* ENJOY ON YOUR TV */
+  .section-container {
+    display: block;
+  }
+  .section-container .left-column {
+    width: 100%;
+    text-align: center;
+  }
+  .section-container .right-column .img {
+    width: 100%;
+  }
+  /* Download your show to watch offline */
+  .section-2-container {
+    display: block;
+  }
+  .section-2-container .left-column {
+    width: 100%;
+  }
+  .section-2-container .right-column {
+    width: 100%;
+    text-align: center;
+  }
+  /* FOOTER SECTION */
+  footer .content .box {
+    width: 50%;
+  }
+}
+@media (max-width: 774px) {
+  /* ENJOY ON YOUR TV */
+  .section-container {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 659px) {
+  /* NAVBAR */
+  .showcase-top {
+    padding: 26px 0px 0px 25px;
+  }
+  #logo {
+    height: 25px;
+  }
+  .submit {
+    position: relative;
+    right: 25px;
+    padding: 2px 10px;
+  }
+  select {
+    position: relative;
+    right: 40px;
+    padding: 2px 10px;
+  }
+  /* GET STARTED */
+  .get-started-container {
+    position: relative;
+    top: 60px;
+  }
+  h1 {
+    font-size: 2rem;
+    padding: 50px;
+    padding-bottom: 0px;
+  }
+  .para-1 {
+    font-size: 1.5rem;
+  }
+  .para-2 {
+    font-size: 1rem;
+  }
+  input {
+    padding: 14px;
+    width: 70%;
+  }
+  /* QUESTION SECTION STARTS */
+  .question-container button {
+    width: 100%;
+  }
+  .question-container .answer1,
+  .answer2,
+  .answer3,
+  .answer4,
+  .answer5,
+  .answer6 {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  /* Enjoy on your tv */
+  .section-container {
+    padding-bottom: 30px;
+  }
+  .section-container .right-column {
+    height: 270px;
+  }
+  /* DOWNLOAD TO WATCH OFFLINE */
+  .section-2-container .left-column .box {
+    width: 100%;
+  }
+  /* FOOTER SECTION */
+  footer {
+    position: relative;
+  }
+  footer .content .box {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 346px) {
+  /* NAVBAR */
+  #logo {
+    height: 22px;
+  }
+  .submit {
+    padding: 1px 5px;
+  }
+  select {
+    padding: 1px 0px;
+    position: relative;
+    right: 30px;
+  }
+  /* GET STARTED  */
+  h1 {
+    font-size: 1.5rem;
+  }
+  .para-1 {
+    font-size: 1.1rem;
+  }
+  .para-2 {
+    font-size: 0.8rem;
+  }
+}
